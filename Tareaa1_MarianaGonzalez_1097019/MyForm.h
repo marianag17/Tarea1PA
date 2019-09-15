@@ -98,16 +98,16 @@ namespace Tareaa1MarianaGonzalez1097019 {
 			this->label6 = (gcnew System::Windows::Forms::Label());
 			this->label4 = (gcnew System::Windows::Forms::Label());
 			this->tabPage3 = (gcnew System::Windows::Forms::TabPage());
-			this->openFileDialog1 = (gcnew System::Windows::Forms::OpenFileDialog());
-			this->label9 = (gcnew System::Windows::Forms::Label());
-			this->label10 = (gcnew System::Windows::Forms::Label());
-			this->label11 = (gcnew System::Windows::Forms::Label());
-			this->label12 = (gcnew System::Windows::Forms::Label());
-			this->resc = (gcnew System::Windows::Forms::Label());
-			this->txtorigen = (gcnew System::Windows::Forms::TextBox());
-			this->txtdestino = (gcnew System::Windows::Forms::TextBox());
-			this->txtnumc = (gcnew System::Windows::Forms::TextBox());
 			this->label14 = (gcnew System::Windows::Forms::Label());
+			this->txtnumc = (gcnew System::Windows::Forms::TextBox());
+			this->txtdestino = (gcnew System::Windows::Forms::TextBox());
+			this->txtorigen = (gcnew System::Windows::Forms::TextBox());
+			this->resc = (gcnew System::Windows::Forms::Label());
+			this->label12 = (gcnew System::Windows::Forms::Label());
+			this->label11 = (gcnew System::Windows::Forms::Label());
+			this->label10 = (gcnew System::Windows::Forms::Label());
+			this->label9 = (gcnew System::Windows::Forms::Label());
+			this->openFileDialog1 = (gcnew System::Windows::Forms::OpenFileDialog());
 			this->tabControl1->SuspendLayout();
 			this->tabPage1->SuspendLayout();
 			this->tabPage2->SuspendLayout();
@@ -232,7 +232,7 @@ namespace Tareaa1MarianaGonzalez1097019 {
 			this->btntexto->Name = L"btntexto";
 			this->btntexto->Size = System::Drawing::Size(90, 57);
 			this->btntexto->TabIndex = 4;
-			this->btntexto->Text = L"SUBIR ARCHIVO";
+			this->btntexto->Text = L"LEER ARCHIVO";
 			this->btntexto->UseVisualStyleBackColor = true;
 			this->btntexto->Click += gcnew System::EventHandler(this, &MyForm::btntexto_Click);
 			// 
@@ -257,11 +257,11 @@ namespace Tareaa1MarianaGonzalez1097019 {
 			// label6
 			// 
 			this->label6->AutoSize = true;
-			this->label6->Location = System::Drawing::Point(3, 69);
+			this->label6->Location = System::Drawing::Point(109, 66);
 			this->label6->Name = L"label6";
-			this->label6->Size = System::Drawing::Size(399, 17);
+			this->label6->Size = System::Drawing::Size(205, 17);
 			this->label6->TabIndex = 1;
-			this->label6->Text = L"Suba su archivo de texto aquí, palabras separadas por comas";
+			this->label6->Text = L"Palabras separadas por comas";
 			// 
 			// label4
 			// 
@@ -290,36 +290,43 @@ namespace Tareaa1MarianaGonzalez1097019 {
 			this->tabPage3->Text = L"Ejercicio 3";
 			this->tabPage3->UseVisualStyleBackColor = true;
 			// 
-			// openFileDialog1
+			// label14
 			// 
-			this->openFileDialog1->FileName = L"openFileDialog1";
+			this->label14->AutoSize = true;
+			this->label14->Location = System::Drawing::Point(103, 27);
+			this->label14->Name = L"label14";
+			this->label14->Size = System::Drawing::Size(196, 17);
+			this->label14->TabIndex = 8;
+			this->label14->Text = L"CONVERSIÓN DE NÚMEROS";
 			// 
-			// label9
+			// txtnumc
 			// 
-			this->label9->AutoSize = true;
-			this->label9->Location = System::Drawing::Point(82, 67);
-			this->label9->Name = L"label9";
-			this->label9->Size = System::Drawing::Size(87, 17);
-			this->label9->TabIndex = 0;
-			this->label9->Text = L"Base Origen";
+			this->txtnumc->Location = System::Drawing::Point(161, 170);
+			this->txtnumc->Name = L"txtnumc";
+			this->txtnumc->Size = System::Drawing::Size(71, 22);
+			this->txtnumc->TabIndex = 7;
 			// 
-			// label10
+			// txtdestino
 			// 
-			this->label10->AutoSize = true;
-			this->label10->Location = System::Drawing::Point(245, 67);
-			this->label10->Name = L"label10";
-			this->label10->Size = System::Drawing::Size(92, 17);
-			this->label10->TabIndex = 1;
-			this->label10->Text = L"Base Destino";
+			this->txtdestino->Location = System::Drawing::Point(248, 100);
+			this->txtdestino->Name = L"txtdestino";
+			this->txtdestino->Size = System::Drawing::Size(71, 22);
+			this->txtdestino->TabIndex = 6;
 			// 
-			// label11
+			// txtorigen
 			// 
-			this->label11->AutoSize = true;
-			this->label11->Location = System::Drawing::Point(139, 137);
-			this->label11->Name = L"label11";
-			this->label11->Size = System::Drawing::Size(131, 17);
-			this->label11->TabIndex = 2;
-			this->label11->Text = L"Número a Convertir";
+			this->txtorigen->Location = System::Drawing::Point(85, 100);
+			this->txtorigen->Name = L"txtorigen";
+			this->txtorigen->Size = System::Drawing::Size(71, 22);
+			this->txtorigen->TabIndex = 5;
+			// 
+			// resc
+			// 
+			this->resc->AutoSize = true;
+			this->resc->Location = System::Drawing::Point(245, 244);
+			this->resc->Name = L"resc";
+			this->resc->Size = System::Drawing::Size(0, 17);
+			this->resc->TabIndex = 4;
 			// 
 			// label12
 			// 
@@ -330,43 +337,36 @@ namespace Tareaa1MarianaGonzalez1097019 {
 			this->label12->TabIndex = 3;
 			this->label12->Text = L"Resultado";
 			// 
-			// resc
+			// label11
 			// 
-			this->resc->AutoSize = true;
-			this->resc->Location = System::Drawing::Point(245, 244);
-			this->resc->Name = L"resc";
-			this->resc->Size = System::Drawing::Size(0, 17);
-			this->resc->TabIndex = 4;
+			this->label11->AutoSize = true;
+			this->label11->Location = System::Drawing::Point(139, 137);
+			this->label11->Name = L"label11";
+			this->label11->Size = System::Drawing::Size(131, 17);
+			this->label11->TabIndex = 2;
+			this->label11->Text = L"Número a Convertir";
 			// 
-			// txtorigen
+			// label10
 			// 
-			this->txtorigen->Location = System::Drawing::Point(85, 100);
-			this->txtorigen->Name = L"txtorigen";
-			this->txtorigen->Size = System::Drawing::Size(71, 22);
-			this->txtorigen->TabIndex = 5;
+			this->label10->AutoSize = true;
+			this->label10->Location = System::Drawing::Point(245, 67);
+			this->label10->Name = L"label10";
+			this->label10->Size = System::Drawing::Size(92, 17);
+			this->label10->TabIndex = 1;
+			this->label10->Text = L"Base Destino";
 			// 
-			// txtdestino
+			// label9
 			// 
-			this->txtdestino->Location = System::Drawing::Point(248, 100);
-			this->txtdestino->Name = L"txtdestino";
-			this->txtdestino->Size = System::Drawing::Size(71, 22);
-			this->txtdestino->TabIndex = 6;
+			this->label9->AutoSize = true;
+			this->label9->Location = System::Drawing::Point(82, 67);
+			this->label9->Name = L"label9";
+			this->label9->Size = System::Drawing::Size(87, 17);
+			this->label9->TabIndex = 0;
+			this->label9->Text = L"Base Origen";
 			// 
-			// txtnumc
+			// openFileDialog1
 			// 
-			this->txtnumc->Location = System::Drawing::Point(161, 170);
-			this->txtnumc->Name = L"txtnumc";
-			this->txtnumc->Size = System::Drawing::Size(71, 22);
-			this->txtnumc->TabIndex = 7;
-			// 
-			// label14
-			// 
-			this->label14->AutoSize = true;
-			this->label14->Location = System::Drawing::Point(103, 27);
-			this->label14->Name = L"label14";
-			this->label14->Size = System::Drawing::Size(196, 17);
-			this->label14->TabIndex = 8;
-			this->label14->Text = L"CONVERSIÓN DE NÚMEROS";
+			this->openFileDialog1->FileName = L"openFileDialog1";
 			// 
 			// MyForm
 			// 
@@ -394,16 +394,9 @@ namespace Tareaa1MarianaGonzalez1097019 {
 		resmultisuma->Text = System::Convert::ToString(RecursividadObj->MultiSuma(n1, n2));
 	}
 private: System::Void btntexto_Click(System::Object^  sender, System::EventArgs^  e) {
-	OpenFileDialog^ openFileDialog1 = gcnew OpenFileDialog;
-
-	openFileDialog1->InitialDirectory = "c:\\";
-	openFileDialog1->Filter = "txt files (*.txt)|*.txt";
-	openFileDialog1->FilterIndex = 2;
-	openFileDialog1->RestoreDirectory = true;
-	if (openFileDialog1->ShowDialog() == System::Windows::Forms::DialogResult::OK)
-	{
-
-	}
+	StreamReader^ streamReader = gcnew StreamReader("..//palabras.txt");
+	String^ textoDelArchivo = streamReader->ReadToEnd();
+	System::Windows::Forms::MessageBox::Show(textoDelArchivo);
 }
 
 };
